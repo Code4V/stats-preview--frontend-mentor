@@ -1,0 +1,36 @@
+doctype doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href=require('../scss/index.sass'))
+    link(rel="shortcut icon", sizes="32x32", href=require('../assets/favicon-32x32.png'), type="image/x-icon")
+    title Frontend Mentor | Stats peview card component
+    script(src=require('../index.js')) 
+  body
+    main
+      section.
+        Get insights that help your business grow.
+
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.
+
+        10k+ companies
+        314 templates
+        12m+ queriess
+      |
+      picture
+        source(media="(min-width: 768px)", srcset=require('../assets/image-header-desktop.jpg'), sizes="")
+        img(src=require('../assets/image-header-mobile.jpg'), alt="header")
+
+
+  .attribution 
+    | Challenge by
+    a(href="https://www.frontendmentor.io?ref=challenge") Frontend Mentor
+    | .
+    | Coded by
+    a(href="https://www.github.com/Code4V") Code4V
+    | .
+    
+      
+

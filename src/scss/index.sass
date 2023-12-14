@@ -2,22 +2,31 @@
 @use 'components' as *
 @use 'utilities' as *
 
-* 
+*
   box-sizing: border-box
 
-:root 
+:root
   font-family: 'Inter'
   font-size: 15px
 
 body
   background-color: $darkblue
+  display: grid
+  place-items: center
+  height: 100%
 
 main
   display: flex
-  background-color:  hsl(244, 38%, 16%)
-  width: 74rem
+  flex-flow: column nowrap
+  background-color: hsl(244, 38%, 16%)
   border-radius: .5rem
   overflow: hidden
 
 h1,h2,h3,h4,h5,h6,span,p
   color: $white
+
+@media (min-width: 768px) 
+  main
+    margin-block-start: 9.25rem
+    flex-flow: row nowrap
+    width: 1110px

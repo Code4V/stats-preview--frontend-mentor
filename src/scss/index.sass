@@ -1,2 +1,23 @@
-body 
-  background-color: blue
+@use 'abstract' as *
+@use 'components' as *
+@use 'utilities' as *
+
+* 
+  box-sizing: border-box
+
+:root 
+  font-family: 'Inter'
+  font-size: 15px
+
+body
+  background-color: $darkblue
+
+main
+  display: flex
+  background-color:  hsl(244, 38%, 16%)
+  width: 74rem
+  border-radius: .5rem
+  overflow: hidden
+
+h1,h2,h3,h4,h5,h6,span,p
+  color: $white

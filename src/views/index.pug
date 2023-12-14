@@ -9,19 +9,29 @@ html(lang="en")
     script(src=require('./../index.js')) 
   body
     main
-      section.
-        Get insights that help your business grow.
+      section.information
+        h1.information__header 
+          | Get 
+          span.information__highlight insights 
+          | that help your business grow.
 
-        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-        experience, and overall efficiency.
+        p.information__content.
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
 
-        10k+ companies
-        314 templates
-        12m+ queriess
-      |
-      picture
-        source(media="(min-width: 768px)", srcset=require('./../assets/image-header-desktop.jpg'), sizes="")
-        img(src=require('./../assets/image-header-mobile.jpg'), alt="header")
+        .information__stats.stats
+          .stat 
+            h4.stat__header 10k+ 
+            span.stat__subheader companies
+          .stat 
+            h4.stat__header 314 
+            span.stat__subheader templates
+          .stat 
+            h4.stat__header 12m+ 
+            span.stat__subheader queries
+      .header__image
+        picture
+          source(media="(min-width: 768px)", srcset=require('./../assets/image-header-desktop.jpg'))
+          img(src=require('./../assets/image-header-mobile.jpg'), alt="header")
 
 
   .attribution 

@@ -10,7 +10,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist/'),
     publicPath: '/',
-    filename: 'assets/js/[name].[contenthash:8].js'
+    filename: '[name].[contenthash:8].js'
     //☝🏽 Output filename of files with hash for unique id
   },
   plugins: [
@@ -18,7 +18,7 @@ module.exports = {
       pretty: true,
       //☝🏽 Format HTML (only in dev mode)
       css: {
-        filename: 'assets/css/[name].[contenthash:8].css'
+        filename: '[name].[contenthash:8].css'
       }
     })
   ],
@@ -39,7 +39,7 @@ module.exports = {
         test: /\.(png|jpg|jpeg|ico)/,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/img/[name].[hash:8][ext]'
+          filename: '[name].[hash:8][ext]'
         }
       },
       {

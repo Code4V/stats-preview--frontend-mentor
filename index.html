@@ -3,23 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/index.fccacba0.css" />
+    <link rel="stylesheet" href="assets/css/index.0cfbb3e0.css" />
     <link rel="shortcut icon" sizes="32x32" href="assets/img/favicon-32x32.736eae1f.png" type="image/x-icon" />
     <title>Frontend Mentor | Stats peview card component</title>
     <script src="assets/js/index.1.fdb2493b.js"> </script>
   </head>
   <body>
     <main>
-      <section>Get insights that help your business grow.
-        Discover the benefits of data analytics and make better decisions regarding revenue, customer
-        experience, and overall efficiency.
-        10k+ companies
-        314 templates
-        12m+ queriess</section>
-      <picture>
-        <source media="(min-width: 768px)" srcset="assets/img/image-header-desktop.72d6e2a0.jpg" sizes="" /><img
-          src="assets/img/image-header-mobile.399f71e7.jpg" alt="header" />
-      </picture>
+      <section class="information">
+        <h1 class="information__header"> Get <span class="information__highlight">insights </span>that help your
+          business grow.</h1>
+        <p class="information__content">Discover the benefits of data analytics and make better decisions regarding
+          revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="information__stats stats">
+          <div class="stat">
+            <h4 class="stat__header">10k+ </h4><span class="stat__subheader">companies</span>
+          </div>
+          <div class="stat">
+            <h4 class="stat__header">314 </h4><span class="stat__subheader">templates</span>
+          </div>
+          <div class="stat">
+            <h4 class="stat__header">12m+ </h4><span class="stat__subheader">queries</span>
+          </div>
+        </div>
+      </section>
+      <div class="header__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="assets/img/image-header-desktop.72d6e2a0.jpg" /><img
+            src="assets/img/image-header-mobile.399f71e7.jpg" alt="header" />
+        </picture>
+      </div>
     </main>
   </body>
   <div class="attribution"> Challenge by<a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.

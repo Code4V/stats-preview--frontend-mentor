@@ -23,14 +23,17 @@
     opacity: .1
     mix-blend-mode: darken
 
-
-    
   img
     filter: contrast(.6) brightness(1.25)
+    display: block
     height: 100%
     object-fit: cover
+    width: 100%
 
 @media ( min-width:  768px)
   .header__image
     order: 1
+
+    img 
+      width: auto
   
